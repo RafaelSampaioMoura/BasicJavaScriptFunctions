@@ -13,7 +13,7 @@ function calcArea(base, area) {
 // Desafio 3
 function splitSentence(frase) {
   // seu código aqui
-  return frase.split(" ");
+  return frase.split(' ');
 }
 
 // Desafio 4
@@ -21,30 +21,30 @@ function concatName(stringArray) {
   // seu código aqui
   const fraseUm = stringArray[0];
   const fraseDois = stringArray[stringArray.length - 1];
-  const fraseFundida = fraseDois.concat(", ", fraseUm);
+  const fraseFundida = fraseDois.concat(', ', fraseUm);
   return fraseFundida;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  return (wins * 3) + ties;
+  return wins * 3 + ties;
 }
 
 // Desafio 6
 function highestCount(numberArray) {
   // seu código aqui
   let biggest = numberArray[0];
-  for(let number of numberArray) {
-    if(number > biggest) {
+  for (let number of numberArray) {
+    if (number > biggest) {
       biggest = number;
     }
   }
 
   let repetitions = 0;
 
-  for(let number of numberArray) {
-    if(number === biggest) {
+  for (let number of numberArray) {
+    if (number === biggest) {
       repetitions++;
     }
   }
@@ -57,18 +57,31 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   const cat1W = Math.abs(mouse - cat1) < Math.abs(mouse - cat2);
   const cat2W = Math.abs(mouse - cat1) > Math.abs(mouse - cat2);
-  if(cat1W) {
-    return "cat1";
-  } else if(cat2W) {
-    return "cat2";
+  if (cat1W) {
+    return 'cat1';
+  } else if (cat2W) {
+    return 'cat2';
   } else {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   }
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numberArray) {
   // seu código aqui
+  let returnArray = [];
+  for (let number of numberArray) {
+    if (number % 3 === 0 && number % 5 === 0) {
+      returnArray.push('fizzBuzz');
+    } else if (number % 3 === 0) {
+      returnArray.push('fizz');
+    } else if (number % 5 === 0) {
+      returnArray.push('buzz');
+    } else {
+      returnArray.push('bug!');
+    }
+  }
+  return returnArray;
 }
 
 // Desafio 9
