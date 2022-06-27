@@ -17,8 +17,12 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(stringArray) {
   // seu código aqui
+  const fraseUm = stringArray[0];
+  const fraseDois = stringArray[stringArray.length - 1];
+  const fraseFundida = fraseDois.concat(", ", fraseUm);
+  return fraseFundida;
 }
 
 // Desafio 5
