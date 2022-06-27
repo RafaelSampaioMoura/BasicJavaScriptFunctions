@@ -45,7 +45,7 @@ function highestCount(numberArray) {
 
   for (let number of numberArray) {
     if (number === biggest) {
-      repetitions++;
+      repetitions += 1;
     }
   }
 
@@ -85,11 +85,46 @@ function fizzBuzz(numberArray) {
 }
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+  let stringArray = string.split("");
+  for(let i = 0; i < stringArray.length; i++) {
+    if(stringArray[i] === "a") {
+    stringArray[i] = "1";
+    } else if(stringArray[i] === "e") {
+      stringArray[i] = "2";
+    } else if(stringArray[i] === "i") {
+      stringArray[i] = "3";
+    } else if(stringArray[i] === "o") {
+      stringArray[i] = "4";
+    } else if(stringArray[i] === "u") {
+      stringArray[i] = "5";
+    }
+  }
+
+  string = stringArray.join("");
+  return string;
 }
-function decode() {
+
+function decode(string) {
   // seu código aqui
+  let stringArray = string.split("");
+  for(let i = 0; i < stringArray.length; i++) {
+    if(stringArray[i] === "1") {
+    stringArray[i] = "a";
+    } else if(stringArray[i] === "2") {
+      stringArray[i] = "e";
+    } else if(stringArray[i] === "3") {
+      stringArray[i] = "i";
+    } else if(stringArray[i] === "4") {
+      stringArray[i] = "o";
+    } else if(stringArray[i] === "5") {
+      stringArray[i] = "u";
+    }
+  }
+
+  string = stringArray.join("");
+  return string;
 }
 
 // Desafio 10
