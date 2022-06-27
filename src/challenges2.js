@@ -27,7 +27,7 @@ function generatePhoneNumber(numberArray) {
   numberArray.splice(3, 0, ')');
   numberArray.splice(4, 0, ' ');
   numberArray.splice(10, 0, '-');
-  return numberArray.join("");
+  return numberArray.join('');
   //numberArray.splice()
 }
 
@@ -43,16 +43,36 @@ let numbers = [9, 9, 9, 1, 2, 3, 4, 5, 6, 7, 8];
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
-  const smallerThan = (lineA + lineB) > lineC && (lineA + lineC) > lineB && (lineB + lineC) > lineA;
-  const biggerThan = Math.abs(lineA - lineB) < lineC && Math.abs(lineA - lineC) < lineB && Math.abs(lineB - lineC) < lineA;
+  const smallerThan =
+    lineA + lineB > lineC && lineA + lineC > lineB && lineB + lineC > lineA;
+  const biggerThan =
+    Math.abs(lineA - lineB) < lineC &&
+    Math.abs(lineA - lineC) < lineB &&
+    Math.abs(lineB - lineC) < lineA;
 
   return smallerThan && biggerThan;
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(string) {
   // seu código aqui
+  let regex = /\d+/;
+  let waterCups = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i].match(regex)) {
+      if (parseInt(string[i]) > 0 && parseInt(string[i]) < 10)
+        waterCups += parseInt(string[i]);
+    }
+  }
+
+  if (waterCups > 1) {
+    return `${waterCups} copos de água`;
+  } else {
+    return `${waterCups} copo de água`;
+  }
 }
+
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,
