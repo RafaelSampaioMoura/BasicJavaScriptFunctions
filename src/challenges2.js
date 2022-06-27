@@ -41,8 +41,12 @@ let numbers = [9, 9, 9, 1, 2, 3, 4, 5, 6, 7, 8];
 // generatePhoneNumber(numbers);
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  const smallerThan = (lineA + lineB) > lineC && (lineA + lineC) > lineB && (lineB + lineC) > lineA;
+  const biggerThan = Math.abs(lineA - lineB) < lineC && Math.abs(lineA - lineC) < lineB && Math.abs(lineB - lineC) < lineA;
+
+  return smallerThan && biggerThan;
 }
 
 // Desafio 13
