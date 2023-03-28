@@ -9,7 +9,7 @@
 <p>As the name suggests, this is a simple list of exercises to practice the basics of JavaScript. That includes logical operators, mathematical operations, for loops, if/else operations, etc.<p/>
 
 ### Techs & Tools
-<img src="https://img.shields.io/badge/JavaScript-%20-orange" alt="javascript-shield"</img>
+<img src="https://img.shields.io/badge/JavaScript-%20-orange" alt="javascript-shield" />
 
 ### Installation
 <p>If you want to run the files on your machine, follow the steps: </p>
@@ -50,7 +50,7 @@ If you do not have Node installed on your machine, you can download it through <
 <p>Como o nome sugere, esses são exercícios simples para pratica as funcionalidades básicas do JavaScript, incluindo operadores lógicos, operações matemáticas, for loops, if/else, etc.<p/>
 
 ### Techs & Tools
-<img src="https://img.shields.io/badge/JavaScript-%20-orange" alt="javascript-shield"</img>
+<img src="https://img.shields.io/badge/JavaScript-%20-orange" alt="javascript-shield" />
 
 ### Installation
 <p>Se você quiser executar esses arquivos na sua máquina, sigua os seguintes passos: </p>
