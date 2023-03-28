@@ -11,7 +11,7 @@
 ### Techs & Tools
 <img src="https://img.shields.io/badge/JavaScript-%20-orange" alt="javascript-shield" />
 
-### Installation
+### Installation & Execution
 <p>If you want to run the files on your machine, follow the steps: </p>
 
 <ol>
@@ -49,10 +49,10 @@ If you do not have Node installed on your machine, you can download it through <
 
 <p>Como o nome sugere, esses são exercícios simples para pratica as funcionalidades básicas do JavaScript, incluindo operadores lógicos, operações matemáticas, for loops, if/else, etc.<p/>
 
-### Techs & Tools
+### Techs & Ferramentas
 <img src="https://img.shields.io/badge/JavaScript-%20-orange" alt="javascript-shield" />
 
-### Installation
+### Instalação & Uso
 <p>Se você quiser executar esses arquivos na sua máquina, sigua os seguintes passos: </p>
 
 <ol>
