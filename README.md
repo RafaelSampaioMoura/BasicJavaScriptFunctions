@@ -38,7 +38,7 @@ node <name-of-file>.js
 If you do not have Node installed on your machine, you can download it through <a href="https://nodejs.org/en/download">this link</a>
 
 </ol>
-<details/>
+</details>
 
 ## Portuguese
 
@@ -79,4 +79,4 @@ node <nome-do-arquivo>.js
 Caso você não tenha o Node instalado em sua máquina, você pode fazer o download do mesmo <a href="https://nodejs.org/pt-br/download">nesse link</a>
 
 </ol>
-<details/>
+</details>
